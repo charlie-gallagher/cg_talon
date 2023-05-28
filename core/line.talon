@@ -7,5 +7,3 @@ amazon {user.aws_environments}:
 	insert(aws_environments)
 	insert('.admin')
 	key(enter)
-
-

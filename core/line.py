@@ -14,4 +14,3 @@ ctx_terminal.lists['user.aws_environments'] = {
     'staging': 'staging',
     'production': 'production',
 }
-
