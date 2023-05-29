@@ -1,23 +1,19 @@
 tag: user.vim
 -
 
-cape: key(escape)
+insert: user.key_with_clear('i')
 
-insert: key(escape escape i)
+visual: user.key_with_clear('v')
+visual block: user.key_with_clear('ctrl-v')
+visual line: user.key_with_clear('V')
 
-visual: key(escape escape v)
-visual block: key(escape escape ctrl-v)
-visual line: key(escape escape V)
+change word: user.insert_with_clear('caw')
+clear line: user.key_with_clear('S')
+change inner: user.insert_with_clear('ci')
+change one: user.insert_with_clear('ca')
 
-
-change word: key(c a w)
-clear line: key(escape escape S)
-change inner: key(c i)
-change one: key(c a)
-
-
-go way up: key(g g)
-go way down: key(G)
+go way up: user.key_with_clear('gg')
+go way down: user.key_with_clear('G')
 
 page up: key(ctrl-u)
 page down: key(ctrl-d)
@@ -25,37 +21,35 @@ scroll up: key(ctrl-u)
 scroll down: key(ctrl-d)
 
 file save: 
-	key(escape escape)
-	insert(":w")
+	user.insert_with_clear(':w')
 	key(enter)
 file close:
-	key(escape escape)
-	insert(":q")
+	user.insert_with_clear(':q')
 	key(enter)
 
-go def: key(ctrl-])
-go def split: key(ctrl-w ])
-choose define: key(g ])
-pop def: key(ctrl-t)
+go def: user.key_with_clear('ctrl-]')
+go def split: user.key_with_clear('ctrl-w ]')
+choose define: user.key_with_clear('g ]')
+pop def: user.key_with_clear('ctrl-t')
 
 # Buffers
 buffer toggle:
-	insert(":b#")
+	user.insert_with_clear(":b#")
 	key(enter)
 buffer next:
-	insert(":bn")
+	user.insert_with_clear(":bn")
 	key(enter)
 buffer last:
-	insert(":bp")
+	user.insert_with_clear(":bp")
 	key(enter)
 buffer delete: 
-	insert(":bd")
+	user.insert_with_clear(":bd")
 	key(enter)
 
 
 # File explorer
 file explorer:
-	insert(":Vexplore")
+	user.insert_with_clear(":Vexplore")
 	key(enter)
 
 
@@ -63,11 +57,11 @@ split:
 	key(ctrl-w)
 
 split right:
-	insert(":vsplit")
+	user.insert_with_clear(":vsplit")
 	key(enter)
 
 split down:
-	insert(":split")
+	user.insert_with_clear(":split")
 	key(enter)
 	
 
