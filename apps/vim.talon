@@ -63,6 +63,12 @@ split right:
 split down:
 	user.insert_with_clear(":split")
 	key(enter)
-	
 
+
+close all:
+	user.insert_with_clear(":qall")
+	key(enter)
+
+slap:
+	user.key_with_clear("o")
 

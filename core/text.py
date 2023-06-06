@@ -6,7 +6,7 @@ mod = Module()
 @mod.action_class
 class CommaActions:
     def format_commas(x: str, include_quotes: str, quote: str='\'') -> None:
-        """Format as commas list"""
+        "Format as commas list"
         split_string = x.split()
         if include_quotes=="true":
             split_string_final = [f"{quote}{x_piece}{quote}" for x_piece in split_string]
