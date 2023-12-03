@@ -3,7 +3,7 @@ tag: terminal
 -
 
 amazon {user.aws_environments}:
-	insert('platform.')
+	insert('amazon ')
 	insert(aws_environments)
-	insert('.admin')
+	insert(' admin')
 	key(enter)
