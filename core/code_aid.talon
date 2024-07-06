@@ -12,3 +12,4 @@ coalgap: insert(": ")
 	insert(symbol_key)
 	key(left)
 
+clap: key(enter)
