@@ -26,6 +26,10 @@ file save:
 file close:
 	user.insert_with_clear(':q')
 	key(enter)
+force close:
+	user.insert_with_clear(':!q')
+	key(enter)
+
 
 go def: user.key_with_clear('ctrl-]')
 go def split: user.key_with_clear('ctrl-w ]')
